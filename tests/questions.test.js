@@ -4,8 +4,8 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const { QUESTIONS } = require("../src/questions.js");
 
-test("there are at least 5 questions", () => {
-  assert.ok(QUESTIONS.length >= 5, `expected at least 5 questions, found ${QUESTIONS.length}`);
+test("there are at least 9 questions", () => {
+  assert.ok(QUESTIONS.length >= 9, `expected at least 9 questions, found ${QUESTIONS.length}`);
 });
 
 test("every question has text, 4 options and a valid answer index", () => {

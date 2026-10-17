@@ -57,6 +57,17 @@ h2 {
   margin: 0;
 }
 
+.timer {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.timer-warning {
+  color: var(--wrong);
+  font-weight: 700;
+}
+
 #options {
   list-style: none;
   padding: 0;
