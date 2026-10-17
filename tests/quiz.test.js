@@ -2,7 +2,13 @@
 // Run them with:  npm test
 const { test } = require("node:test");
 const assert = require("node:assert/strict");
-const { shuffle, isCorrect, calculatePercentage, getGrade } = require("../src/quiz.js");
+const { shuffle, isCorrect, calculatePercentage, getGrade, formatTimeLeft } = require("../src/quiz.js");
+
+test("formatTimeLeft returns a label with the remaining seconds", () => {
+  assert.equal(formatTimeLeft(15), "⏱ 15s");
+  assert.equal(formatTimeLeft(5), "⏱ 5s");
+  assert.equal(formatTimeLeft(0), "⏱ 0s");
+});
 
 test("isCorrect returns true for the right answer", () => {
   assert.equal(isCorrect({ answer: 2 }, 2), true);
