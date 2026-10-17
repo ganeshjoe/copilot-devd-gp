@@ -36,6 +36,21 @@ const QUESTIONS = [
     ],
     answer: 1,
   },
+  {
+    question: "Which file usually stores a GitHub Actions workflow?",
+    options: ["Dockerfile", ".github/workflows/*.yml", "README.md", ".env"],
+    answer: 1,
+  },
+  {
+    question: "What event commonly starts a workflow after code is pushed?",
+    options: ["clone", "push", "merge", "fork"],
+    answer: 1,
+  },
+  {
+    question: "What does GitHub Actions run code on?",
+    options: ["index", "cache", "server", "runner"],
+    answer: 3,
+  },
 ];
 
 // Lets Node.js tests load this file. Browsers ignore this block.
